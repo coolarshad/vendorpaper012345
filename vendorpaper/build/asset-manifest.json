@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3e0a9e98.css",
+    "main.js": "/static/js/main.9564b8be.js",
+    "static/js/787.d2718cc1.chunk.js": "/static/js/787.d2718cc1.chunk.js",
+    "static/media/brand.jpg": "/static/media/brand.2e94074d141f69fb9fab.jpg",
+    "static/media/vendor-paper-logo.png": "/static/media/vendor-paper-logo.a5a1c64d1bfe7da1b9a4.png",
+    "static/media/logo1.png": "/static/media/logo1.cc81dd9957858368d304.png",
+    "static/media/logo2.png": "/static/media/logo2.cc81dd9957858368d304.png",
+    "static/media/vendor-paper-high-resolution-color-logo.png": "/static/media/vendor-paper-high-resolution-color-logo.2153df1d7aaa41687033.png",
+    "index.html": "/index.html",
+    "main.3e0a9e98.css.map": "/static/css/main.3e0a9e98.css.map",
+    "main.9564b8be.js.map": "/static/js/main.9564b8be.js.map",
+    "787.d2718cc1.chunk.js.map": "/static/js/787.d2718cc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e0a9e98.css",
+    "static/js/main.9564b8be.js"
+  ]
+}
