@@ -172,7 +172,7 @@ export default function ShowPage() {
                     <div class="font-medium text-white p-1 mr-5"><a href='' class="text-white no-underline">Company Overview</a></div>
                     <div class="font-medium text-white p-1 mr-5"><a href='' class="text-white no-underline">Contact</a></div>
                     <div class="font-medium text-white p-1 mr-5"><a href='' class="text-white no-underline">Company Rating & Reviews</a></div>
-                    <div class="font-medium text-white p-1 mr-5"><a href='' class="text-white no-underline">Offers</a></div>
+                    <div class="font-medium text-white p-1 mr-5"><a href='' class="text-white no-underline">About Us</a></div>
                 </div>
                 <div class="w-screen h-[70vh] bg-gray-400">
                     <Slider {...settings}>
@@ -187,7 +187,7 @@ export default function ShowPage() {
                 </div>
                 <div class="w-screen bg-sky-200 p-6">
                     <p className='text-2xl font-medium'>Select By Categories</p>
-                    <div class="h-48 flex flex-col flex-wrap justify-start items-center">
+                    <div class="h-48 flex flex-col flex-wrap justify-start items-start ">
                         {items.map((item, index) => (
                             <div key={index}>
                                 {item}
@@ -195,40 +195,182 @@ export default function ShowPage() {
                         ))}
                     </div>
                 </div>
-                <div class="w-screen h-96 ">
-                    <div class="w-auto h-44  m-5 p-5">
-                        <p>Company contact information</p>
-                        <div>
-                            <img src={c_logo} className='h-20 w-20 rounded-full border-current'/>
-                            <p>Ms. Sammi Luo</p>
-                            <div>
-                                <p>Company phone: 999999999999</p>
-                                <p>Company Fax: 999999999999</p>
-                                <p>Company Email: 999999999999</p>
-                                <p>Company Address: 999999999999</p>
+                <div class="w-auto h-auto flex flex-col justify-center items-center">
+                    <div class="w-auto h-auto mt-5 m-3 ">
+                        <p className='font-bold text-3xl'>Company contact information</p>
+                        <div className='flex justify-center items-center content-center w-auto justify-end bg-slate-100 rounded m-1'>
+                            <img src={c_logo} className='h-20 w-20 rounded-full border-current' />
+                            <div className='flex flex-col items-start justify-end p-3 mt-3'>
+                                <p className='text-2xl font-bold leading-3 mb-1'>Ms. Sammi Luo</p>
+                                <p className='text-base'>Sales Manager</p>
+                            </div>
+                        </div>
+                        <div className='flex justify-center bg-slate-100 rounded m-1'>
+                            <div className='p-3 text-left'>
+                                <p><span className='font-bold'>Company phone: </span>999999999999</p>
+                                <p><span className='font-bold'>Company mobile: </span>999999999999</p>
+                            </div>
+                            <div className='p-3 text-left'>
+                                <p><span className='font-bold'>Company fax: </span> 999999999999</p>
+                                <p><span className='font-bold'>Company website: </span>999999999999</p>
                             </div>
                         </div>
                     </div>
-                    <div class="w-auto h-44  m-5 p-5"></div>
+                    <div className="w-auto h-auto m-1 p-1 flex justify-center items-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14133.976201915886!2d85.34463115!3d27.67112125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1707236668405!5m2!1sen!2snp"
+                            width="1000"
+                            height="400"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Google Map"
+                        ></iframe>
+                    </div>
                 </div>
-                <div class="w-auto h-96 bg-amber-200 flex justify-center items-center">
-                    <div className='p-10'>
+                <div class="w-auto h-auto flex justify-center items-center mt-5">
+                    <div className='p-5 flex flex-col items-start bg-slate-100 rounded'>
                         <p className='font-bold text-3xl'>Performance</p>
                         <p><span className='font-bold text-3xl'>4.4/5</span> <span className='font-bold'>Satisfied</span></p>
                         <p>3604 <span className='font-bold'>reviews</span></p>
-                        <div>
-                            <div><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Minor customization</span></div>
-                            <div><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Full customization</span></div>
-                            <div><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Raw-material traceability identification</span></div>
-                            <div><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Finished product inspection</span></div>
-                            <div><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">CE</span></div>
+                        <div className='flex flex-col items-start '>
+                            <div className='mt-2'><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Minor customization</span></div>
+                            <div className='mt-2'><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Full customization</span></div>
+                            <div className='mt-2'><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Raw-material traceability identification</span></div>
+                            <div className='mt-2'><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">Finished product inspection</span></div>
+                            <div className='mt-2'><FontAwesomeIcon icon={faCircleCheck} /><span class="ml-2">CE</span></div>
                         </div>
                     </div>
-                    <div className='p-5'>
-                    <iframe className='w-[600px] h-[300px]' src="https://www.youtube.com/embed/RIv9SiI2bSQ?list=RDOPazrdwYAm0" title="Dil Ka Telephone 2.0 - Full Video | Dream Girl 2 | Ayushmann, Ananya | Meet Bros,Jonita,Jubin,Kumaar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div className='p-3'>
+                    <iframe className='w-[600px] h-[350px]' src="https://www.youtube.com/embed/RIv9SiI2bSQ?list=RDOPazrdwYAm0" title="Dil Ka Telephone 2.0 - Full Video | Dream Girl 2 | Ayushmann, Ananya | Meet Bros,Jonita,Jubin,Kumaar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="w-screen h-96 bg-lime-200"></div>
+                <div class="w-screen h-auto flex flex-col justify-evenly items-center">
+                    <div className='text-3xl font-bold text-left m-3 p-2'>Overall Rating</div>
+                    <div className='flex justify-center items-center m-3 p-2'>
+                        <div className='text-3xl font-bold text-orange-600'>4.5/5</div>
+                        <div className='flex flex-col ml-2 items-start'>
+                            <div className='font-bold'>Satisfied</div>
+                            <div className='font-medium'>18 Reviews</div>
+                        </div>
+                    </div>
+                    <div className='flex  justify-evenly'>
+                        <div className='flex flex-col'>
+                            <div className='flex justify-evenly items-start bg-slate-100 rounded m-1'>
+                                <div className='flex p-3'>
+                                    <div className='font-medium p-2'>Supplier Service</div>
+                                    <div className='font-bold p-2'>5 star</div>
+                                    <div className='font-medium p-2'>Very Satisfied</div>
+                                </div>
+                                <div className='flex flex-col p-3'>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='flex justify-evenly items-start bg-slate-100 rounded m-1'>
+                                <div className='flex p-3'>
+                                    <div className='font-medium p-2'>Product Quality</div>
+                                    <div className='font-bold p-2'>5 star</div>
+                                    <div className='font-medium p-2'> Very Satisfied</div>
+                                </div>
+                                <div className='flex flex-col'>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                        <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='flex justify-evenly items-start bg-slate-100 rounded m-1'>
+                                <div className='flex p-3'>
+                                    <div className='font-medium p-2'>On-time Shipment</div>
+                                    <div className='font-bold p-2'>5 star</div>
+                                    <div className='font-medium p-2'> Very Satisfied</div>
+                                </div>
+                                <div className='flex flex-col'>
+                                    <div className='flex justify-center items-center'>
+                                    <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                    <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                    <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                    <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                    <div className='flex justify-center items-center'>
+                                    <div className='font-bold p-1'>5 stars</div>
+                                        <div className='w-32 h-0 p-1 rounded-full bg-orange-600'></div>
+                                        <div className='font-bold p-1'>100% (17)</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='flex flex-col'>
+                           
+                           
+                           
+                            
+                          
+                            
+                        </div>
+                    </div>
+                </div>
                 <div class="w-screen h-96 bg-teal-200"></div>
             </React.Fragment>
         </React.Fragment>
