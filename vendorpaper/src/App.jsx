@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="container mx-auto">
+      <div >
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/list" element={<ListPage />} />

@@ -294,7 +294,7 @@ const ProductPage = () => {
             </div>
 
             <section className="my-10">
-                <h2 className="text-2xl font-bold mb-6">Company Section</h2>
+                {/* <h2 className="text-2xl font-bold mb-6">Company Section</h2> */}
 
                 {/* Company Profile */}
                 <div className="mb-10">

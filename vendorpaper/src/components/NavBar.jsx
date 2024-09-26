@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaChevronDown, FaUser } from 'react-icons/fa';
+import { FaEnvelope, FaChevronDown, FaUser,FaSearch } from 'react-icons/fa';
 import logo from '../assets/logo.png'
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
             </div>
     
             {/* Search Bar */}
-            <div className="flex items-center space-x-2 bg-gray-100 rounded-full px-4 py-2 w-1/2 shadow-sm border border-gray-300">
+            <div className="flex items-center space-x-2 bg-gray-100 rounded-full px-4 py-1 w-1/2 shadow-sm border border-gray-300">
               {/* Dropdown */}
               <div className="relative">
                 <select className="bg-transparent text-black rounded-l-full focus:outline-none border-r border-gray-300 px-2">
@@ -36,7 +36,7 @@ const Navbar = () => {
               />
               {/* Search Button */}
               <button className="focus:outline-none">
-                <i className="fas fa-search text-red-500"></i>
+                <FaSearch className="text-red-500 text-xl" /> 
               </button>
             </div>
     
