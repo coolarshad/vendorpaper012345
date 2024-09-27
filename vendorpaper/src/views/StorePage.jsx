@@ -5,6 +5,7 @@ import Slider from 'react-slick'; // Import React Slick
 import 'slick-carousel/slick/slick.css'; // Import Slick CSS
 import 'slick-carousel/slick/slick-theme.css'; // Import Slick theme CSS
 import ProductTile from '../components/ProductTile';
+import Navbar from '../components/NavBar';
 
 const StorePage = () => {
     
@@ -177,6 +178,7 @@ const [selectedMedia, setSelectedMedia] = useState(company.media[0]);
   };
 
   return (
+    <><Navbar />
     <div className="min-h-screen flex flex-col">
       {/* Full-width banner with background image */}
       <div
@@ -214,7 +216,7 @@ const [selectedMedia, setSelectedMedia] = useState(company.media[0]);
       </div>
 
       {/* Menu Bar with Search */}
-      <nav className="bg-green-600 w-full flex justify-between items-center px-20 py-1">
+      <nav className="bg-black w-full flex justify-between items-center px-20 py-1">
         {/* Menu items on the left */}
         <ul className="flex space-x-8 text-white text-lg font-semibold">
           <li className="hover:underline cursor-pointer">Home</li>
@@ -498,6 +500,7 @@ const [selectedMedia, setSelectedMedia] = useState(company.media[0]);
 
       
     </div>
+    </>
   );
 };
 

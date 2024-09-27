@@ -2,6 +2,7 @@ import { FaStar } from 'react-icons/fa';
 import React, { useState } from 'react';
 import CustomerReviews from '../components/CustomerReviews';
 import ReactImageMagnify from 'react-image-magnify';
+import Navbar from '../components/NavBar';
 
 const ProductPage = () => {
     const product = {
@@ -152,6 +153,7 @@ const ProductPage = () => {
     };
 
     return (
+        <><Navbar />
         <div className="max-w-7xl mx-auto p-4">
             <div className="flex flex-col md:flex-row md:space-x-6">
                 <div className="md:w-1/2">
@@ -487,6 +489,7 @@ const ProductPage = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

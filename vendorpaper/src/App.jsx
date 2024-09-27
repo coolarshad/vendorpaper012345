@@ -9,7 +9,7 @@ import ProductPage from './views/ProductPage';
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <div >
         <Routes>
           <Route path="/" element={<HomePage />} />
